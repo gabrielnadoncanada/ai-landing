@@ -8,7 +8,7 @@
 /* compilation Tailwind. En contexte Next.js, --font-body est défini et prime ;   */
 /* sinon on retombe sur "Poppins" (chargé par <link> Google) puis system-ui.      */
 body {
-  font-family: var(--font-body, "Poppins"), system-ui, sans-serif;
+  font-family: var(--font-body, "Geist"), system-ui, sans-serif;
 }
 
 /* ════════════════════════ COUCHE 1 — PRIMITIVES ════════════════════════ */
@@ -151,13 +151,13 @@ body {
   --color-bar-border: color-mix(in oklch, var(--brand-300) 10%, transparent);
   --color-stripe-final: color-mix(in oklch, white 3%, transparent);
 
-  /* Fonts — source unique (chargées via next/font dans layout.jsx).         */
-  /* Fallback littéral "Poppins"/"Newsreader" : si --font-poppins n'est pas   */
+  /* Fonts — source unique (chargées via next/font dans layout.tsx).         */
+  /* Fallback littéral "Poppins"/"Geist" : si --font-poppins n'est pas        */
   /* injecté (prototype statique sans next/font), on retombe sur la police    */
   /* chargée par nom via le <link> Google de index.html — jamais sur le       */
   /* défaut serif (Times New Roman).                                          */
-  --font-display: var(--font-newsreader, "Newsreader"), Georgia, serif;
-  --font-body: var(--font-poppins, "Poppins"), system-ui, sans-serif;
+  --font-display: var(--font-poppins, "Poppins"), system-ui, sans-serif;
+  --font-body: var(--font-geist, "Geist"), system-ui, sans-serif;
   --font-code: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono",
     monospace;
 }
