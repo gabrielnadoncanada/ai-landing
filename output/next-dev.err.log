@@ -1,0 +1,777 @@
+⨯ ./package.json:22:3
+Error parsing package.json file
+  [90m20 |[0m     [32m"prettier"[0m: [32m"^3.8.3"[0m,
+  [90m21 |[0m         [32m"prettier-plugin-tailwindcss"[0m: [32m"^0.8.0"[0m,
+[31m[1m>[0m [90m22 |[0m   }
+  [90m   |[0m   [31m[1m^[0m
+  [90m23 |[0m }
+  [90m24 |[0m
+
+package.json is not parseable: invalid JSON: trailing comma at line 22 column 3
+
+
+[browser] ./package.json:22:3
+Error parsing package.json file
+  20 |     "prettier": "^3.8.3",
+  21 |         "prettier-plugin-tailwindcss": "^0.8.0",
+> 22 |   }
+     |   ^
+  23 | }
+  24 |
+
+package.json is not parseable: invalid JSON: trailing comma at line 22 column 3 
+    at handleErrors (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13851:21)
+    at processMessage (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13914:21)
+    at WebSocket.handleMessage (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13358:52) (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13851:21)
+[browser] ./package.json:22:3
+Error parsing package.json file
+  20 |     "prettier": "^3.8.3",
+  21 |         "prettier-plugin-tailwindcss": "^0.8.0",
+> 22 |   }
+     |   ^
+  23 | }
+  24 |
+
+package.json is not parseable: invalid JSON: trailing comma at line 22 column 3 
+    at handleErrors (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13851:21)
+    at processMessage (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13914:21)
+    at WebSocket.handleMessage (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13358:52) (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13851:21)
+[browser] ./package.json:22:3
+Error parsing package.json file
+  20 |     "prettier": "^3.8.3",
+  21 |         "prettier-plugin-tailwindcss": "^0.8.0",
+> 22 |   }
+     |   ^
+  23 | }
+  24 |
+
+package.json is not parseable: invalid JSON: trailing comma at line 22 column 3 
+    at handleErrors (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13851:21)
+    at processMessage (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13914:21)
+    at WebSocket.handleMessage (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13358:52) (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13851:21)
+⨯ ./package.json:22:3
+Error parsing package.json file
+  [90m20 |[0m     [32m"prettier"[0m: [32m"^3.8.3"[0m,
+  [90m21 |[0m         [32m"prettier-plugin-tailwindcss"[0m: [32m"^0.8.0"[0m,
+[31m[1m>[0m [90m22 |[0m   }
+  [90m   |[0m   [31m[1m^[0m
+  [90m23 |[0m }
+  [90m24 |[0m
+
+package.json is not parseable: invalid JSON: trailing comma at line 22 column 3
+
+
+[browser] ./package.json:22:3
+Error parsing package.json file
+  20 |     "prettier": "^3.8.3",
+  21 |         "prettier-plugin-tailwindcss": "^0.8.0",
+> 22 |   }
+     |   ^
+  23 | }
+  24 |
+
+package.json is not parseable: invalid JSON: trailing comma at line 22 column 3 
+    at handleErrors (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13851:21)
+    at processMessage (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13914:21)
+    at WebSocket.handleMessage (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13358:52) (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13851:21)
+[browser] ./package.json:22:3
+Error parsing package.json file
+  20 |     "prettier": "^3.8.3",
+  21 |         "prettier-plugin-tailwindcss": "^0.8.0",
+> 22 |   }
+     |   ^
+  23 | }
+  24 |
+
+package.json is not parseable: invalid JSON: trailing comma at line 22 column 3 
+    at handleErrors (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13851:21)
+    at processMessage (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13914:21)
+    at WebSocket.handleMessage (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13358:52) (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13851:21)
+[browser] ./package.json:22:3
+Error parsing package.json file
+  20 |     "prettier": "^3.8.3",
+  21 |         "prettier-plugin-tailwindcss": "^0.8.0",
+> 22 |   }
+     |   ^
+  23 | }
+  24 |
+
+package.json is not parseable: invalid JSON: trailing comma at line 22 column 3 
+    at handleErrors (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13851:21)
+    at processMessage (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13914:21)
+    at WebSocket.handleMessage (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13358:52) (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13851:21)
+[browser] ./package.json:22:3
+Error parsing package.json file
+  20 |     "prettier": "^3.8.3",
+  21 |         "prettier-plugin-tailwindcss": "^0.8.0",
+> 22 |   }
+     |   ^
+  23 | }
+  24 |
+
+package.json is not parseable: invalid JSON: trailing comma at line 22 column 3 
+    at handleErrors (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13851:21)
+    at processMessage (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13914:21)
+    at WebSocket.handleMessage (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13358:52) (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13851:21)
+[browser] ./package.json:22:3
+Error parsing package.json file
+  20 |     "prettier": "^3.8.3",
+  21 |         "prettier-plugin-tailwindcss": "^0.8.0",
+> 22 |   }
+     |   ^
+  23 | }
+  24 |
+
+package.json is not parseable: invalid JSON: trailing comma at line 22 column 3 
+    at handleErrors (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13851:21)
+    at processMessage (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13914:21)
+    at WebSocket.handleMessage (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13358:52) (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13851:21)
+[browser] ./package.json:22:3
+Error parsing package.json file
+  20 |     "prettier": "^3.8.3",
+  21 |         "prettier-plugin-tailwindcss": "^0.8.0",
+> 22 |   }
+     |   ^
+  23 | }
+  24 |
+
+package.json is not parseable: invalid JSON: trailing comma at line 22 column 3 
+    at handleErrors (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13851:21)
+    at processMessage (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13914:21)
+    at WebSocket.handleMessage (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13358:52) (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13851:21)
+[browser] ./package.json:22:3
+Error parsing package.json file
+  20 |     "prettier": "^3.8.3",
+  21 |         "prettier-plugin-tailwindcss": "^0.8.0",
+> 22 |   }
+     |   ^
+  23 | }
+  24 |
+
+package.json is not parseable: invalid JSON: trailing comma at line 22 column 3 
+    at handleErrors (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13851:21)
+    at processMessage (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13914:21)
+    at WebSocket.handleMessage (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13358:52) (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13851:21)
+[browser] ./package.json:22:3
+Error parsing package.json file
+  20 |     "prettier": "^3.8.3",
+  21 |         "prettier-plugin-tailwindcss": "^0.8.0",
+> 22 |   }
+     |   ^
+  23 | }
+  24 |
+
+package.json is not parseable: invalid JSON: trailing comma at line 22 column 3 
+    at handleErrors (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13851:21)
+    at processMessage (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13914:21)
+    at WebSocket.handleMessage (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13358:52) (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13851:21)
+⨯ ./package.json:22:3
+Error parsing package.json file
+  [90m20 |[0m     [32m"prettier"[0m: [32m"^3.8.3"[0m,
+  [90m21 |[0m         [32m"prettier-plugin-tailwindcss"[0m: [32m"^0.8.0"[0m,
+[31m[1m>[0m [90m22 |[0m   }
+  [90m   |[0m   [31m[1m^[0m
+  [90m23 |[0m }
+  [90m24 |[0m
+
+package.json is not parseable: invalid JSON: trailing comma at line 22 column 3
+
+
+⨯ ./package.json:22:3
+Error parsing package.json file
+  [90m20 |[0m     [32m"prettier"[0m: [32m"^3.8.3"[0m,
+  [90m21 |[0m         [32m"prettier-plugin-tailwindcss"[0m: [32m"^0.8.0"[0m,
+[31m[1m>[0m [90m22 |[0m   }
+  [90m   |[0m   [31m[1m^[0m
+  [90m23 |[0m }
+  [90m24 |[0m
+
+package.json is not parseable: invalid JSON: trailing comma at line 22 column 3
+
+
+[browser] ./package.json:22:3
+Error parsing package.json file
+  20 |     "prettier": "^3.8.3",
+  21 |         "prettier-plugin-tailwindcss": "^0.8.0",
+> 22 |   }
+     |   ^
+  23 | }
+  24 |
+
+package.json is not parseable: invalid JSON: trailing comma at line 22 column 3 
+    at handleErrors (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13851:21)
+    at processMessage (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13914:21)
+    at WebSocket.handleMessage (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13358:52) (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13851:21)
+⨯ ./package.json:22:3
+Error parsing package.json file
+  [90m20 |[0m     [32m"prettier"[0m: [32m"^3.8.3"[0m,
+  [90m21 |[0m         [32m"prettier-plugin-tailwindcss"[0m: [32m"^0.8.0"[0m,
+[31m[1m>[0m [90m22 |[0m   }
+  [90m   |[0m   [31m[1m^[0m
+  [90m23 |[0m }
+  [90m24 |[0m
+
+package.json is not parseable: invalid JSON: trailing comma at line 22 column 3
+
+
+⨯ ./package.json:22:3
+Error parsing package.json file
+  [90m20 |[0m     [32m"prettier"[0m: [32m"^3.8.3"[0m,
+  [90m21 |[0m         [32m"prettier-plugin-tailwindcss"[0m: [32m"^0.8.0"[0m,
+[31m[1m>[0m [90m22 |[0m   }
+  [90m   |[0m   [31m[1m^[0m
+  [90m23 |[0m }
+  [90m24 |[0m
+
+package.json is not parseable: invalid JSON: trailing comma at line 22 column 3
+
+
+⨯ ./package.json:22:3
+Error parsing package.json file
+  [90m20 |[0m     [32m"prettier"[0m: [32m"^3.8.3"[0m,
+  [90m21 |[0m         [32m"prettier-plugin-tailwindcss"[0m: [32m"^0.8.0"[0m,
+[31m[1m>[0m [90m22 |[0m   }
+  [90m   |[0m   [31m[1m^[0m
+  [90m23 |[0m }
+  [90m24 |[0m
+
+package.json is not parseable: invalid JSON: trailing comma at line 22 column 3
+
+
+⨯ ./package.json:22:3
+Error parsing package.json file
+  [90m20 |[0m     [32m"prettier"[0m: [32m"^3.8.3"[0m,
+  [90m21 |[0m         [32m"prettier-plugin-tailwindcss"[0m: [32m"^0.8.0"[0m,
+[31m[1m>[0m [90m22 |[0m   }
+  [90m   |[0m   [31m[1m^[0m
+  [90m23 |[0m }
+  [90m24 |[0m
+
+package.json is not parseable: invalid JSON: trailing comma at line 22 column 3
+
+
+⨯ ./package.json:22:3
+Error parsing package.json file
+  [90m20 |[0m     [32m"prettier"[0m: [32m"^3.8.3"[0m,
+  [90m21 |[0m         [32m"prettier-plugin-tailwindcss"[0m: [32m"^0.8.0"[0m,
+[31m[1m>[0m [90m22 |[0m   }
+  [90m   |[0m   [31m[1m^[0m
+  [90m23 |[0m }
+  [90m24 |[0m
+
+package.json is not parseable: invalid JSON: trailing comma at line 22 column 3
+
+
+⨯ ./package.json:22:3
+Error parsing package.json file
+  [90m20 |[0m     [32m"prettier"[0m: [32m"^3.8.3"[0m,
+  [90m21 |[0m         [32m"prettier-plugin-tailwindcss"[0m: [32m"^0.8.0"[0m,
+[31m[1m>[0m [90m22 |[0m   }
+  [90m   |[0m   [31m[1m^[0m
+  [90m23 |[0m }
+  [90m24 |[0m
+
+package.json is not parseable: invalid JSON: trailing comma at line 22 column 3
+
+
+⨯ ./package.json:22:3
+Error parsing package.json file
+  [90m20 |[0m     [32m"prettier"[0m: [32m"^3.8.3"[0m,
+  [90m21 |[0m         [32m"prettier-plugin-tailwindcss"[0m: [32m"^0.8.0"[0m,
+[31m[1m>[0m [90m22 |[0m   }
+  [90m   |[0m   [31m[1m^[0m
+  [90m23 |[0m }
+  [90m24 |[0m
+
+package.json is not parseable: invalid JSON: trailing comma at line 22 column 3
+
+
+⨯ ./package.json:22:3
+Error parsing package.json file
+  [90m20 |[0m     [32m"prettier"[0m: [32m"^3.8.3"[0m,
+  [90m21 |[0m         [32m"prettier-plugin-tailwindcss"[0m: [32m"^0.8.0"[0m,
+[31m[1m>[0m [90m22 |[0m   }
+  [90m   |[0m   [31m[1m^[0m
+  [90m23 |[0m }
+  [90m24 |[0m
+
+package.json is not parseable: invalid JSON: trailing comma at line 22 column 3
+
+
+⨯ ./package.json:22:3
+Error parsing package.json file
+  [90m20 |[0m     [32m"prettier"[0m: [32m"^3.8.3"[0m,
+  [90m21 |[0m         [32m"prettier-plugin-tailwindcss"[0m: [32m"^0.8.0"[0m,
+[31m[1m>[0m [90m22 |[0m   }
+  [90m   |[0m   [31m[1m^[0m
+  [90m23 |[0m }
+  [90m24 |[0m
+
+package.json is not parseable: invalid JSON: trailing comma at line 22 column 3
+
+
+⨯ ./package.json:22:3
+Error parsing package.json file
+  [90m20 |[0m     [32m"prettier"[0m: [32m"^3.8.3"[0m,
+  [90m21 |[0m         [32m"prettier-plugin-tailwindcss"[0m: [32m"^0.8.0"[0m,
+[31m[1m>[0m [90m22 |[0m   }
+  [90m   |[0m   [31m[1m^[0m
+  [90m23 |[0m }
+  [90m24 |[0m
+
+package.json is not parseable: invalid JSON: trailing comma at line 22 column 3
+
+
+⨯ ./package.json:22:3
+Error parsing package.json file
+  [90m20 |[0m     [32m"prettier"[0m: [32m"^3.8.3"[0m,
+  [90m21 |[0m         [32m"prettier-plugin-tailwindcss"[0m: [32m"^0.8.0"[0m,
+[31m[1m>[0m [90m22 |[0m   }
+  [90m   |[0m   [31m[1m^[0m
+  [90m23 |[0m }
+  [90m24 |[0m
+
+package.json is not parseable: invalid JSON: trailing comma at line 22 column 3
+
+
+[browser] Uncaught Error: ./package.json:22:3
+Error parsing package.json file
+  20 |     "prettier": "^3.8.3",
+  21 |         "prettier-plugin-tailwindcss": "^0.8.0",
+> 22 |   }
+     |   ^
+  23 | }
+  24 |
+
+package.json is not parseable: invalid JSON: trailing comma at line 22 column 3
+
+
+    at <unknown> (Error: ./package.json:22:3)
+    at <unknown> (Error: (./package.json:22:3)
+[browser] ./package.json:22:3
+Error parsing package.json file
+  20 |     "prettier": "^3.8.3",
+  21 |         "prettier-plugin-tailwindcss": "^0.8.0",
+> 22 |   }
+     |   ^
+  23 | }
+  24 |
+
+package.json is not parseable: invalid JSON: trailing comma at line 22 column 3 
+    at handleErrors (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2774:21)
+    at processMessage (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2835:28)
+    at <unknown> (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2325:17) (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2774:21)
+[browser] ./package.json:22:3
+Error parsing package.json file
+  20 |     "prettier": "^3.8.3",
+  21 |         "prettier-plugin-tailwindcss": "^0.8.0",
+> 22 |   }
+     |   ^
+  23 | }
+  24 |
+
+package.json is not parseable: invalid JSON: trailing comma at line 22 column 3 
+    at handleErrors (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2774:21)
+    at processMessage (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2835:28)
+    at <unknown> (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2325:17) (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2774:21)
+[browser] ./package.json:22:3
+Error parsing package.json file
+  20 |     "prettier": "^3.8.3",
+  21 |         "prettier-plugin-tailwindcss": "^0.8.0",
+> 22 |   }
+     |   ^
+  23 | }
+  24 |
+
+package.json is not parseable: invalid JSON: trailing comma at line 22 column 3 
+    at handleErrors (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2774:21)
+    at processMessage (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2835:28)
+    at <unknown> (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2325:17) (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2774:21)
+[browser] ./package.json:22:3
+Error parsing package.json file
+  20 |     "prettier": "^3.8.3",
+  21 |         "prettier-plugin-tailwindcss": "^0.8.0",
+> 22 |   }
+     |   ^
+  23 | }
+  24 |
+
+package.json is not parseable: invalid JSON: trailing comma at line 22 column 3 
+    at handleErrors (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2774:21)
+    at processMessage (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2835:28)
+    at <unknown> (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2325:17) (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2774:21)
+[browser] ./package.json:22:3
+Error parsing package.json file
+  20 |     "prettier": "^3.8.3",
+  21 |         "prettier-plugin-tailwindcss": "^0.8.0",
+> 22 |   }
+     |   ^
+  23 | }
+  24 |
+
+package.json is not parseable: invalid JSON: trailing comma at line 22 column 3 
+    at handleErrors (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2774:21)
+    at processMessage (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2835:28)
+    at <unknown> (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2325:17) (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2774:21)
+[browser] Uncaught Error: ./package.json:22:3
+Error parsing package.json file
+  20 |     "prettier": "^3.8.3",
+  21 |         "prettier-plugin-tailwindcss": "^0.8.0",
+> 22 |   }
+     |   ^
+  23 | }
+  24 |
+
+package.json is not parseable: invalid JSON: trailing comma at line 22 column 3
+
+
+    at <unknown> (Error: ./package.json:22:3)
+    at <unknown> (Error: (./package.json:22:3)
+[browser] ./package.json:22:3
+Error parsing package.json file
+  20 |     "prettier": "^3.8.3",
+  21 |         "prettier-plugin-tailwindcss": "^0.8.0",
+> 22 |   }
+     |   ^
+  23 | }
+  24 |
+
+package.json is not parseable: invalid JSON: trailing comma at line 22 column 3 
+    at handleErrors (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2774:21)
+    at processMessage (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2835:28)
+    at <unknown> (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2325:17) (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2774:21)
+[browser] ./package.json:22:3
+Error parsing package.json file
+  20 |     "prettier": "^3.8.3",
+  21 |         "prettier-plugin-tailwindcss": "^0.8.0",
+> 22 |   }
+     |   ^
+  23 | }
+  24 |
+
+package.json is not parseable: invalid JSON: trailing comma at line 22 column 3 
+    at handleErrors (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2774:21)
+    at processMessage (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2835:28)
+    at <unknown> (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2325:17) (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2774:21)
+[browser] ./package.json:22:3
+Error parsing package.json file
+  20 |     "prettier": "^3.8.3",
+  21 |         "prettier-plugin-tailwindcss": "^0.8.0",
+> 22 |   }
+     |   ^
+  23 | }
+  24 |
+
+package.json is not parseable: invalid JSON: trailing comma at line 22 column 3 
+    at handleErrors (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2774:21)
+    at processMessage (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2835:28)
+    at <unknown> (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2325:17) (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2774:21)
+[browser] ./package.json:22:3
+Error parsing package.json file
+  20 |     "prettier": "^3.8.3",
+  21 |         "prettier-plugin-tailwindcss": "^0.8.0",
+> 22 |   }
+     |   ^
+  23 | }
+  24 |
+
+package.json is not parseable: invalid JSON: trailing comma at line 22 column 3 
+    at handleErrors (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2774:21)
+    at processMessage (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2835:28)
+    at <unknown> (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2325:17) (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2774:21)
+[browser] ./package.json:22:3
+Error parsing package.json file
+  20 |     "prettier": "^3.8.3",
+  21 |         "prettier-plugin-tailwindcss": "^0.8.0",
+> 22 |   }
+     |   ^
+  23 | }
+  24 |
+
+package.json is not parseable: invalid JSON: trailing comma at line 22 column 3 
+    at handleErrors (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2774:21)
+    at processMessage (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2835:28)
+    at <unknown> (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2325:17) (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2774:21)
+[browser] ./package.json:22:3
+Error parsing package.json file
+  20 |     "prettier": "^3.8.3",
+  21 |         "prettier-plugin-tailwindcss": "^0.8.0",
+> 22 |   }
+     |   ^
+  23 | }
+  24 |
+
+package.json is not parseable: invalid JSON: trailing comma at line 22 column 3 
+    at handleErrors (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2774:21)
+    at processMessage (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2835:28)
+    at <unknown> (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2325:17) (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2774:21)
+[browser] ./package.json:22:3
+Error parsing package.json file
+  20 |     "prettier": "^3.8.3",
+  21 |         "prettier-plugin-tailwindcss": "^0.8.0",
+> 22 |   }
+     |   ^
+  23 | }
+  24 |
+
+package.json is not parseable: invalid JSON: trailing comma at line 22 column 3 
+    at handleErrors (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2774:21)
+    at processMessage (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2835:28)
+    at <unknown> (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2325:17) (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2774:21)
+[browser] ./package.json:22:3
+Error parsing package.json file
+  20 |     "prettier": "^3.8.3",
+  21 |         "prettier-plugin-tailwindcss": "^0.8.0",
+> 22 |   }
+     |   ^
+  23 | }
+  24 |
+
+package.json is not parseable: invalid JSON: trailing comma at line 22 column 3 
+    at handleErrors (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2774:21)
+    at processMessage (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2835:28)
+    at <unknown> (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2325:17) (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2774:21)
+[browser] ./package.json:22:3
+Error parsing package.json file
+  20 |     "prettier": "^3.8.3",
+  21 |         "prettier-plugin-tailwindcss": "^0.8.0",
+> 22 |   }
+     |   ^
+  23 | }
+  24 |
+
+package.json is not parseable: invalid JSON: trailing comma at line 22 column 3 
+    at handleErrors (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2774:21)
+    at processMessage (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2835:28)
+    at <unknown> (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2325:17) (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2774:21)
+[browser] ./package.json:22:3
+Error parsing package.json file
+  20 |     "prettier": "^3.8.3",
+  21 |         "prettier-plugin-tailwindcss": "^0.8.0",
+> 22 |   }
+     |   ^
+  23 | }
+  24 |
+
+package.json is not parseable: invalid JSON: trailing comma at line 22 column 3 
+    at handleErrors (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2774:21)
+    at processMessage (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2835:28)
+    at <unknown> (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2325:17) (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2774:21)
+[browser] Uncaught Error: ./package.json:22:3
+Error parsing package.json file
+  20 |     "prettier": "^3.8.3",
+  21 |         "prettier-plugin-tailwindcss": "^0.8.0",
+> 22 |   }
+     |   ^
+  23 | }
+  24 |
+
+package.json is not parseable: invalid JSON: trailing comma at line 22 column 3
+
+
+    at <unknown> (Error: ./package.json:22:3)
+    at <unknown> (Error: (./package.json:22:3)
+[browser] ./package.json:22:3
+Error parsing package.json file
+  20 |     "prettier": "^3.8.3",
+  21 |         "prettier-plugin-tailwindcss": "^0.8.0",
+> 22 |   }
+     |   ^
+  23 | }
+  24 |
+
+package.json is not parseable: invalid JSON: trailing comma at line 22 column 3 
+    at handleErrors (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2774:21)
+    at processMessage (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2835:28)
+    at <unknown> (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2325:17) (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2774:21)
+[browser] ./package.json:22:3
+Error parsing package.json file
+  20 |     "prettier": "^3.8.3",
+  21 |         "prettier-plugin-tailwindcss": "^0.8.0",
+> 22 |   }
+     |   ^
+  23 | }
+  24 |
+
+package.json is not parseable: invalid JSON: trailing comma at line 22 column 3 
+    at handleErrors (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2774:21)
+    at processMessage (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2835:28)
+    at <unknown> (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2325:17) (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2774:21)
+[browser] ./package.json:22:3
+Error parsing package.json file
+  20 |     "prettier": "^3.8.3",
+  21 |         "prettier-plugin-tailwindcss": "^0.8.0",
+> 22 |   }
+     |   ^
+  23 | }
+  24 |
+
+package.json is not parseable: invalid JSON: trailing comma at line 22 column 3 
+    at handleErrors (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2774:21)
+    at processMessage (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2835:28)
+    at <unknown> (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2325:17) (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2774:21)
+[browser] ./package.json:22:3
+Error parsing package.json file
+  20 |     "prettier": "^3.8.3",
+  21 |         "prettier-plugin-tailwindcss": "^0.8.0",
+> 22 |   }
+     |   ^
+  23 | }
+  24 |
+
+package.json is not parseable: invalid JSON: trailing comma at line 22 column 3 
+    at handleErrors (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2774:21)
+    at processMessage (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2835:28)
+    at <unknown> (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2325:17) (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2774:21)
+[browser] ./package.json:22:3
+Error parsing package.json file
+  20 |     "prettier": "^3.8.3",
+  21 |         "prettier-plugin-tailwindcss": "^0.8.0",
+> 22 |   }
+     |   ^
+  23 | }
+  24 |
+
+package.json is not parseable: invalid JSON: trailing comma at line 22 column 3 
+    at handleErrors (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2774:21)
+    at processMessage (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2835:28)
+    at <unknown> (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2325:17) (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2774:21)
+[browser] ./package.json:22:3
+Error parsing package.json file
+  20 |     "prettier": "^3.8.3",
+  21 |         "prettier-plugin-tailwindcss": "^0.8.0",
+> 22 |   }
+     |   ^
+  23 | }
+  24 |
+
+package.json is not parseable: invalid JSON: trailing comma at line 22 column 3 
+    at handleErrors (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2774:21)
+    at processMessage (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2835:28)
+    at <unknown> (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2325:17) (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2774:21)
+[browser] ./package.json:22:3
+Error parsing package.json file
+  20 |     "prettier": "^3.8.3",
+  21 |         "prettier-plugin-tailwindcss": "^0.8.0",
+> 22 |   }
+     |   ^
+  23 | }
+  24 |
+
+package.json is not parseable: invalid JSON: trailing comma at line 22 column 3 
+    at handleErrors (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2774:21)
+    at processMessage (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2835:28)
+    at <unknown> (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2325:17) (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2774:21)
+[browser] ./package.json:22:3
+Error parsing package.json file
+  20 |     "prettier": "^3.8.3",
+  21 |         "prettier-plugin-tailwindcss": "^0.8.0",
+> 22 |   }
+     |   ^
+  23 | }
+  24 |
+
+package.json is not parseable: invalid JSON: trailing comma at line 22 column 3 
+    at handleErrors (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2774:21)
+    at processMessage (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2835:28)
+    at <unknown> (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2325:17) (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2774:21)
+[browser] Uncaught Error: ./package.json:22:3
+Error parsing package.json file
+  20 |     "prettier": "^3.8.3",
+  21 |         "prettier-plugin-tailwindcss": "^0.8.0",
+> 22 |   }
+     |   ^
+  23 | }
+  24 |
+
+package.json is not parseable: invalid JSON: trailing comma at line 22 column 3
+
+
+    at <unknown> (Error: ./package.json:22:3)
+    at <unknown> (Error: (./package.json:22:3)
+[browser] Uncaught Error: ./package.json:22:3
+Error parsing package.json file
+  20 |     "prettier": "^3.8.3",
+  21 |         "prettier-plugin-tailwindcss": "^0.8.0",
+> 22 |   }
+     |   ^
+  23 | }
+  24 |
+
+package.json is not parseable: invalid JSON: trailing comma at line 22 column 3
+
+
+    at <unknown> (Error: ./package.json:22:3)
+    at <unknown> (Error: (./package.json:22:3)
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+⨯ ReferenceError: geist is not defined
+    at RootLayout (app\layout.jsx:29:43)
+  27 |     <html lang="en" className="scroll-smooth scroll-pt-24 max-mobile:scroll-pt-19.5">
+  28 |       <body
+> 29 |         className={`${poppins.variable} ${geist.variable} ${newsreader.variable} bg-bg tex...
+     |                                           ^
+  30 |       >
+  31 |         {children}
+  32 |       </body> {
+  digest: '534691892'
+}
+⨯ ReferenceError: geist is not defined
+    at RootLayout (app\layout.jsx:29:43)
+  27 |     <html lang="en" className="scroll-smooth scroll-pt-24 max-mobile:scroll-pt-19.5">
+  28 |       <body
+> 29 |         className={`${poppins.variable} ${geist.variable} ${newsreader.variable} bg-bg tex...
+     |                                           ^
+  30 |       >
+  31 |         {children}
+  32 |       </body> {
+  digest: '534691892'
+}
+⨯ ReferenceError: geist is not defined
+    at RootLayout (app\layout.jsx:29:43)
+  27 |     <html lang="en" className="scroll-smooth scroll-pt-24 max-mobile:scroll-pt-19.5">
+  28 |       <body
+> 29 |         className={`${poppins.variable} ${geist.variable} ${newsreader.variable} bg-bg tex...
+     |                                           ^
+  30 |       >
+  31 |         {children}
+  32 |       </body> {
+  digest: '534691892'
+}
+[browser] Uncaught ReferenceError: geist is not defined
+    at RootLayout (app\layout.jsx:29:43)
+    at resolveErrorDev (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_compiled_react-server-dom-turbopack_0p3wegg._.js:1919:105)
+    at processFullStringRow (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_compiled_react-server-dom-turbopack_0p3wegg._.js:2434:29)
+    at processFullBinaryRow (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_compiled_react-server-dom-turbopack_0p3wegg._.js:2393:9)
+    at processBinaryChunk (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_compiled_react-server-dom-turbopack_0p3wegg._.js:2502:221)
+    at progress (file://C:/laragon/www/test 1/.next/dev/static/chunks/node_modules_next_dist_compiled_react-server-dom-turbopack_0p3wegg._.js:2689:13)
+  27 |     <html lang="en" className="scroll-smooth scroll-pt-24 max-mobile:scroll-pt-19.5">
+  28 |       <body
+> 29 |         className={`${poppins.variable} ${geist.variable} ${newsreader.variable} bg-bg tex...
+     |                                           ^
+  30 |       >
+  31 |         {children}
+  32 |       </body>

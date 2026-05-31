@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Supo — Give Your Team Digital Superpowers</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Geist:wght@300;400;500&family=Newsreader:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ===== SVG symbol defs ===== -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="gblue" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#84c8ee"/><stop offset="1" stop-color="#2c83bf"/>
+    </linearGradient>
+    <linearGradient id="gpink" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f2b6ac"/>
+    </linearGradient>
+    <symbol id="xduo" viewBox="0 0 100 90">
+      <g fill="none" stroke-width="15" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M16 20 L50 52 L84 20" stroke="url(#gblue)"/>
+        <path d="M16 70 L50 38 L84 70" stroke="url(#gpink)"/>
+      </g>
+    </symbol>
+    <symbol id="xblue" viewBox="0 0 100 90">
+      <g fill="none" stroke="currentColor" stroke-width="15" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M16 20 L50 52 L84 20"/><path d="M16 70 L50 38 L84 70"/>
+      </g>
+    </symbol>
+    <symbol id="sun" viewBox="0 0 100 100">
+      <circle cx="50" cy="50" r="13" fill="currentColor"/>
+      <g stroke="currentColor" stroke-width="7" stroke-linecap="round">
+        <line x1="50" y1="14" x2="50" y2="26"/><line x1="50" y1="74" x2="50" y2="86"/>
+        <line x1="14" y1="50" x2="26" y2="50"/><line x1="74" y1="50" x2="86" y2="50"/>
+        <line x1="25" y1="25" x2="33" y2="33"/><line x1="67" y1="67" x2="75" y2="75"/>
+        <line x1="75" y1="25" x2="67" y2="33"/><line x1="33" y1="67" x2="25" y2="75"/>
+      </g>
+    </symbol>
+    <symbol id="swirl" viewBox="0 0 100 100">
+      <path d="M62 30 C62 20 36 20 36 41 C36 58 64 53 64 70 C64 81 36 81 34 68"
+        fill="none" stroke="currentColor" stroke-width="13" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="burst" viewBox="0 0 100 100">
+      <g stroke="currentColor" stroke-width="8" stroke-linecap="round">
+        <line x1="50" y1="14" x2="50" y2="86"/><line x1="14" y1="50" x2="86" y2="50"/>
+        <line x1="24" y1="24" x2="76" y2="76"/><line x1="76" y1="24" x2="24" y2="76"/>
+      </g>
+      <circle cx="50" cy="50" r="7" fill="currentColor"/>
+    </symbol>
+    <symbol id="atom" viewBox="0 0 100 100">
+      <g fill="none" stroke="currentColor" stroke-width="7">
+        <ellipse cx="50" cy="50" rx="34" ry="13" transform="rotate(45 50 50)"/>
+        <ellipse cx="50" cy="50" rx="34" ry="13" transform="rotate(-45 50 50)"/>
+      </g>
+      <circle cx="50" cy="50" r="7" fill="currentColor"/>
+    </symbol>
+    <symbol id="dots4" viewBox="0 0 100 100">
+      <g stroke="currentColor" stroke-width="5"><line x1="50" y1="24" x2="50" y2="76"/><line x1="24" y1="50" x2="76" y2="50"/></g>
+      <g fill="currentColor"><circle cx="50" cy="20" r="11"/><circle cx="50" cy="80" r="11"/><circle cx="20" cy="50" r="11"/><circle cx="80" cy="50" r="11"/></g>
+    </symbol>
+    <symbol id="flake" viewBox="0 0 100 100">
+      <g stroke="currentColor" stroke-width="6" stroke-linecap="round">
+        <line x1="50" y1="16" x2="50" y2="84"/>
+        <line x1="20" y1="33" x2="80" y2="67"/>
+        <line x1="80" y1="33" x2="20" y2="67"/>
+      </g>
+    </symbol>
+    <symbol id="sparkle" viewBox="0 0 100 100">
+      <path d="M50 10 C54 38 62 46 90 50 C62 54 54 62 50 90 C46 62 38 54 10 50 C38 46 46 38 50 10 Z" fill="currentColor"/>
+    </symbol>
+    <symbol id="sparkO" viewBox="0 0 100 100">
+      <path d="M50 12 C53.5 37 63 46.5 88 50 C63 53.5 53.5 63 50 88 C46.5 63 37 53.5 12 50 C37 46.5 46.5 37 50 12 Z"
+        fill="none" stroke="currentColor" stroke-width="6" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="pinwheel" viewBox="0 0 100 100">
+      <g fill="currentColor">
+        <path d="M50 50 C50 30 56 13 73 9 C69 29 60 44 50 50 Z"/>
+        <path d="M50 50 C70 50 87 56 91 73 C71 69 56 60 50 50 Z" transform="rotate(0 50 50)"/>
+        <path d="M50 50 C50 70 44 87 27 91 C31 71 40 56 50 50 Z"/>
+        <path d="M50 50 C30 50 13 44 9 27 C29 31 44 40 50 50 Z"/>
+      </g>
+    </symbol>
+    <symbol id="bloom" viewBox="0 0 100 100">
+      <g fill="currentColor">
+        <ellipse cx="50" cy="25" rx="8.5" ry="22"/>
+        <ellipse cx="50" cy="25" rx="8.5" ry="22" transform="rotate(60 50 50)"/>
+        <ellipse cx="50" cy="25" rx="8.5" ry="22" transform="rotate(120 50 50)"/>
+        <ellipse cx="50" cy="25" rx="8.5" ry="22" transform="rotate(180 50 50)"/>
+        <ellipse cx="50" cy="25" rx="8.5" ry="22" transform="rotate(240 50 50)"/>
+        <ellipse cx="50" cy="25" rx="8.5" ry="22" transform="rotate(300 50 50)"/>
+      </g>
+    </symbol>
+    <symbol id="check" viewBox="0 0 24 24">
+      <path d="M5 12.5 L10 17.5 L19 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+  </defs>
+</svg>
+
+<!-- ===== STICKY TOPBAR ===== -->
+<header class="topbar" id="topbar">
+  <div class="wrap nav">
+    <button class="menu" id="menuOpen" aria-label="Open menu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><line x1="4" y1="8" x2="20" y2="8"/><line x1="4" y1="14" x2="14" y2="14"/></svg> Menu</button>
+    <a class="logo" href="#top" aria-label="Supo home"><svg><use href="#xduo"/></svg></a>
+    <a class="contact" href="#contact">Contact Us</a>
+  </div>
+</header>
+
+<!-- ===== MENU OVERLAY ===== -->
+<div class="menu-overlay" id="menuOverlay" aria-hidden="true">
+  <div class="mo-bar wrap">
+    <a class="logo" href="#top" data-nav><svg><use href="#xduo"/></svg> <span>Supo</span></a>
+    <button class="mo-close" id="menuClose" aria-label="Close menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
+      <span>Close</span>
+    </button>
+  </div>
+  <nav class="mo-links wrap">
+    <a class="menu-link" href="#top" data-nav><span class="idx">01</span><span class="lbl">Home</span></a>
+    <a class="menu-link" href="#features" data-nav><span class="idx">02</span><span class="lbl">Why Supo</span></a>
+    <a class="menu-link" href="#craft" data-nav><span class="idx">03</span><span class="lbl">Our Craft</span></a>
+    <a class="menu-link" href="#pricing" data-nav><span class="idx">04</span><span class="lbl">Pricing</span></a>
+    <a class="menu-link" href="#testimonials" data-nav><span class="idx">05</span><span class="lbl">Reviews</span></a>
+    <a class="menu-link" href="#contact" data-nav><span class="idx">06</span><span class="lbl">Contact</span></a>
+  </nav>
+  <div class="mo-foot wrap">
+    <div class="mo-contact">
+      <span class="mo-cap">Get in touch</span>
+      <a href="mailto:hello@emura.studio">hello@emura.studio</a>
+      <a href="tel:+19998887766">+1(999) 888-77-66</a>
+    </div>
+    <div class="mo-social">
+      <a href="#" data-nav aria-label="VK">VK</a>
+      <a href="#" data-nav aria-label="Facebook">Fb</a>
+      <a href="#" data-nav aria-label="Telegram">Tg</a>
+      <a href="#" data-nav aria-label="Instagram">Ig</a>
+    </div>
+  </div>
+</div>
+
+<!-- ===== HERO ===== -->
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="hero-inner">
+      <span class="pill-badge">All-In-One AI Assistant</span>
+      <h1>Give Your Team<br><span class="l2">Digital Superpowers</span></h1>
+      <p class="sub">Curated collection of one-of-a-kind pieces where traditional craftsmanship meets modern aesthetics.</p>
+      <div class="cta-row">
+        <a class="btn btn-ghost" href="#contact" data-nav>Join Demo</a>
+        <a class="btn btn-primary" href="#pricing" data-nav>Explore More</a>
+      </div>
+
+      <div class="cloud">
+        <div class="brand"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 11 L12 5 L20 11 V19 H4 Z"/></svg>Homey</div>
+        <div class="brand"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 20c-5-2-8-6-8-10 3 0 6 2 8 6 2-4 5-6 8-6 0 4-3 8-8 10Z"/></svg>Mindfulness</div>
+        <div class="brand serif"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="3"/><path d="M12 9c0-4 4-4 4 0M12 15c0 4 4 4 4 0M9 12c-4 0-4 4 0 4M15 12c4 0 4-4 0-4"/></svg>Blossom</div>
+        <div class="brand"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8Z"/></svg>Proline</div>
+        <div class="brand"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3 21 12 12 21 3 12Z"/><circle cx="12" cy="12" r="3"/></svg>luminor</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ===== FEATURES ===== -->
+<section class="features" id="features">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Why Modern Leaders<br>Choose Supo?</h2>
+      <p class="intro">Stop managing tools and start managing growth with an AI ecosystem built for precision.</p>
+    </div>
+
+    <div class="feat-grid">
+      <div class="fcard">
+        <div class="ficon" style="color:#2f97d4"><svg><use href="#burst"/></svg></div>
+        <div class="ftxt"><h3>Hyper-Automation</h3><p>Our AI identifies repetitive bottlenecks in your workflow.</p></div>
+      </div>
+      <div class="feat-empty"></div>
+      <div class="fcard">
+        <div class="ficon" style="color:#2f97d4"><svg><use href="#sun"/></svg></div>
+        <div class="ftxt"><h3>Exponential Scale</h3><p>Scaling no longer requires a proportional increase in headcount or cost.</p></div>
+      </div>
+      <div class="fcard">
+        <div class="ficon" style="color:#2f97d4"><svg><use href="#atom"/></svg></div>
+        <div class="ftxt"><h3>Actionable Intel</h3><p>Transform fragmented information into a cohesive narrative.</p></div>
+      </div>
+
+      <div class="fcard">
+        <div class="ficon" style="color:#2f97d4"><svg><use href="#dots4"/></svg></div>
+        <div class="ftxt"><h3>Lean Operations</h3><p>Optimizing resource allocation and identifying hidden operational costs.</p></div>
+      </div>
+      <div class="fcard">
+        <div class="ficon" style="color:#2f97d4"><svg><use href="#swirl"/></svg></div>
+        <div class="ftxt"><h3>Plug &amp; Play</h3><p>Our solution is built for seamless, native connectivity.</p></div>
+      </div>
+      <div class="fcard">
+        <div class="ficon" style="color:#2f97d4"><svg><use href="#sparkle"/></svg></div>
+        <div class="ftxt"><h3>Stay Ahead</h3><p>Continuously updated with the latest advancements in machine learning.</p></div>
+      </div>
+      <div class="fcard feat-deco">
+        <div class="stack">
+          <div class="sq a">+</div>
+          <div class="sq b"><svg><use href="#xduo"/></svg></div>
+          <div class="sq c"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M5 5h5v5H5zM14 14h5v5h-5z"/><path d="M14 6.5h5M16.5 4v5M5 16.5l5 0M7.5 14l0 5" stroke-linecap="round"/></svg></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CRAFTED ===== -->
+<section class="crafted" id="craft">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Crafted slowly,<br>lived intentionally.</h2>
+      <p class="intro">Be the first to secure our curated pieces. Sign up for exclusive access to upcoming studio drops and a private look into our artisan process.</p>
+    </div>
+
+    <div class="bento">
+      <div class="row r1">
+        <div class="bcard">
+          <div class="viz viz-longevity">
+            <div class="arc l"></div><div class="arc r"></div>
+            <span class="tick l">+</span><span class="tick r">+</span>
+            <div class="core" style="color:#2f97d4"><svg><use href="#xblue"/></svg></div>
+          </div>
+          <div class="body"><h3>Designed for Longevity</h3><p>Discover timeless designs that reject mass production. We prioritize lasting quality and sustainable materials for a home lived with purpose.</p></div>
+        </div>
+        <div class="bcard">
+          <div class="viz viz-drops" id="drops"></div>
+          <div class="body"><h3>Early Access Drops</h3><p>Get priority reservations on new collections before launch. You always have first choice.</p></div>
+        </div>
+      </div>
+      <div class="row r2">
+        <div class="bcard">
+          <div class="viz viz-journal">
+            <svg class="jlines" viewBox="0 0 320 200" preserveAspectRatio="none">
+              <path d="M160 100 L78 56 M160 100 L242 56 M160 100 L78 150 M160 100 L242 150" fill="none" stroke="rgba(220,90,80,.35)" stroke-width="1.5"/>
+            </svg>
+            <span class="jtile" style="left:14%;top:22%"><svg style="color:#cfd3d8"><use href="#swirl"/></svg></span>
+            <span class="jtile" style="left:70%;top:22%"><svg style="color:#cfd3d8"><use href="#burst"/></svg></span>
+            <span class="jtile" style="left:14%;top:62%"><svg style="color:#cfd3d8"><use href="#dots4"/></svg></span>
+            <span class="jtile" style="left:70%;top:62%"><svg style="color:#cfd3d8"><use href="#atom"/></svg></span>
+            <span class="jnode"><svg><use href="#xblue"/></svg></span>
+          </div>
+          <div class="body"><h3>Studio Journal Insights</h3><p>Read about the journey of creation and the hands that make it all possible.</p></div>
+        </div>
+        <div class="bcard">
+          <div class="viz viz-steward">
+            <div class="bar" style="height:46%"></div>
+            <div class="bar" style="height:64%"></div>
+            <div class="bar" style="height:52%"></div>
+            <div class="glowbar"><span class="gx"><svg><use href="#xblue"/></svg></span></div>
+            <div class="bar" style="height:70%"></div>
+            <div class="bar" style="height:48%"></div>
+            <div class="bar" style="height:60%"></div>
+          </div>
+          <div class="body"><h3>Intensional Stewardship</h3><p>Learn how your purchase supports artisanal communities and conscious consumption. We are craft, with a conscience.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PRICING ===== -->
+<section class="pricing" id="pricing">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Choose your pace<br>of innovation.</h2>
+      <p class="intro">Simple, transparent pricing tailored to your scale. Whether you're a solo creator or a global enterprise, we have a plan to fuel your AI journey.</p>
+    </div>
+
+    <div class="price-grid">
+      <div class="pcard">
+        <div class="picon" style="color:#9aa0a8"><svg><use href="#pinwheel"/></svg></div>
+        <h3>Starter Plan</h3>
+        <p class="pdesc">Learn how your purchase supports artisanal communities and conscious consumption. We are craft, with a conscience.</p>
+        <div class="divider">Turquoise Trek &middot;</div>
+        <ul>
+          <li><span class="ck"><svg><use href="#check"/></svg></span>Supercharged tools</li>
+          <li><span class="ck"><svg><use href="#check"/></svg></span>Personalised guidance</li>
+          <li><span class="ck"><svg><use href="#check"/></svg></span>Market insights</li>
+          <li><span class="ck"><svg><use href="#check"/></svg></span>Supercharged tools</li>
+          <li><span class="ck"><svg><use href="#check"/></svg></span>Personalised guidance</li>
+        </ul>
+        <a class="btn pbtn" href="#" data-plan="Starter">Choose this plan</a>
+      </div>
+
+      <div class="pcard pro">
+        <div class="spark" id="spark"></div>
+        <span class="badge">Most popular</span>
+        <div class="picon" style="color:#ffffff"><svg><use href="#swirl"/></svg></div>
+        <h3>Pro Plan</h3>
+        <p class="pdesc">Learn how your purchase supports artisanal communities and conscious consumption. We are craft, with a conscience.</p>
+        <div class="divider">Turquoise Trek &middot;</div>
+        <ul>
+          <li><span class="ck"><svg><use href="#check"/></svg></span>Supercharged tools</li>
+          <li><span class="ck"><svg><use href="#check"/></svg></span>Personalised guidance</li>
+          <li><span class="ck"><svg><use href="#check"/></svg></span>Market insights</li>
+          <li><span class="ck"><svg><use href="#check"/></svg></span>Supercharged tools</li>
+          <li><span class="ck"><svg><use href="#check"/></svg></span>Personalised guidance</li>
+        </ul>
+        <a class="btn pbtn" href="#" data-plan="Pro">Choose this plan</a>
+      </div>
+
+      <div class="pcard">
+        <div class="picon" style="color:#9aa0a8"><svg><use href="#bloom"/></svg></div>
+        <h3>Enterprise</h3>
+        <p class="pdesc">Learn how your purchase supports artisanal communities and conscious consumption. We are craft, with a conscience.</p>
+        <div class="divider">Turquoise Trek &middot;</div>
+        <ul>
+          <li><span class="ck"><svg><use href="#check"/></svg></span>Supercharged tools</li>
+          <li><span class="ck"><svg><use href="#check"/></svg></span>Personalised guidance</li>
+          <li><span class="ck"><svg><use href="#check"/></svg></span>Market insights</li>
+          <li><span class="ck"><svg><use href="#check"/></svg></span>Supercharged tools</li>
+          <li><span class="ck"><svg><use href="#check"/></svg></span>Personalised guidance</li>
+        </ul>
+        <a class="btn pbtn" href="#" data-plan="Enterprise">Choose this plan</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section class="testi" id="testimonials">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Real results from<br>real innovators</h2>
+      <p class="intro">Be the first to secure our curated pieces. Sign up for exclusive access to upcoming studio drops and a private look into our artisan process.</p>
+    </div>
+  </div>
+
+  <div class="t-rows">
+    <div class="t-track" id="row1"></div>
+    <div class="t-track rev" id="row2"></div>
+  </div>
+
+  <div class="wrap"><div class="seeall"><a class="btn btn-primary" href="#contact" data-nav>See All</a></div></div>
+</section>
+
+<!-- ===== FINAL CTA ===== -->
+<section class="final">
+  <div class="wrap final-inner">
+    <h1 style="font-size:clamp(44px,6.6vw,92px)">Give Your Team<br><span class="l2">Digital Superpowers</span></h1>
+    <p>Curated collection of one-of-a-kind pieces where traditional craftsmanship meets modern aesthetics.</p>
+    <div class="cta-row">
+      <a class="btn btn-ghost" href="#contact" data-nav>Join Demo</a>
+      <a class="btn btn-primary" href="#pricing" data-nav>Explore More</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer" id="contact">
+  <div class="wrap">
+    <div class="f-grid">
+      <div class="f-brand">
+        <div class="logo"><svg><use href="#xduo"/></svg> Supo</div>
+        <p>Discover timeless designs that reject mass production. We prioritize lasting quality and sustainable materials for a home lived with purpose.</p>
+        <div class="f-social">
+          <a href="#" aria-label="Odnoklassniki"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="7" r="3.4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M7 13c1.6 1.3 3.3 2 5 2s3.4-.7 5-2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M9 21l3-4 3 4M8.5 16.5l7 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></a>
+        </div>
+        <div class="f-social" style="margin-top:14px">
+          <a href="#" aria-label="VK"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.7 16.5c-5 0-8.2-3.5-8.4-9.3h2.6c.1 4.3 2.1 6.1 3.6 6.5V7.2h2.4v3.6c1.5-.2 3-1.8 3.6-3.6h2.4c-.4 2.2-2 3.8-3.1 4.5 1.1.6 2.9 2 3.6 4.8h-2.7c-.5-1.7-1.9-3-3.8-3.2v3.2h-.8Z"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M13.2 21v-7h2l.4-2.6h-2.4V9.7c0-.8.3-1.3 1.4-1.3h1.1V6.1c-.5-.1-1.2-.1-2-.1-2 0-3.4 1.2-3.4 3.5v1.9H8v2.6h2.3V21Z"/></svg></a>
+          <a href="#" aria-label="Telegram"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21 4 2.5 11.3c-.9.4-.9.9-.1 1.1l4.7 1.5L19 6.2c.5-.3.9-.1.6.2l-9.2 8.3-.4 4.4c.4 0 .6-.2.8-.4l2-1.9 4.1 3c.8.4 1.3.2 1.5-.7L22.7 5.3c.3-1.1-.4-1.6-1.7-1.3Z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17" cy="7" r="1.2" fill="currentColor" stroke="none"/></svg></a>
+        </div>
+      </div>
+
+      <div class="f-nav">
+        <a href="#top" data-nav>About.</a>
+        <a href="#testimonials" data-nav>Testimonials.</a>
+        <a href="#pricing" data-nav>Pricing.</a>
+        <a href="#contact" data-nav>Contacts.</a>
+      </div>
+
+      <div class="f-col">
+        <div class="blk">
+          <h4>Contact Us</h4>
+          <p>+1(999) 888-77-66<br>hello@emura.studio</p>
+        </div>
+        <div class="blk" style="margin-bottom:0">
+          <h4>Location</h4>
+          <p>483920, Moscow.<br>Myasnitskaya 22/2/5, Office 4</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="f-bottom">
+      <div></div>
+      <div class="f-copy" style="text-align:center">© 2026 — Copyright.<br>All Rights reserved</div>
+      <div class="f-lang">
+        <div class="lbl">Languages</div>
+        <div class="langs"><b>En</b><span>Es</span><span>Fr</span><span>De</span><span>Ru</span></div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

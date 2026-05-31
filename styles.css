@@ -1,0 +1,403 @@
+@import "tailwindcss";
+
+/* Ne pas scanner la doc (specs/plans) pour les classes Tailwind. */
+@source not "./docs";
+
+/* ════════════════════════ COUCHE 1 — PRIMITIVES ════════════════════════ */
+/* Valeurs brutes. Convertibles en OKLCH sans toucher au reste (Task 4).    */
+:root {
+  /* ── Les SEULES vraies couleurs (les leviers). Tout le reste en dérive. ── */
+
+  /* Marque — 1 teinte pilote tout le bleu (rampe complète) */
+  --brand-hue: 240;
+  --brand-200: oklch(81% 0.085 var(--brand-hue));
+  --brand-300: oklch(78.9% 0.095 var(--brand-hue));
+  --brand-400: oklch(70% 0.12 var(--brand-hue));
+  --brand-500: oklch(64.6% 0.129 var(--brand-hue));
+  --brand-600: oklch(59% 0.122 var(--brand-hue));
+  --brand-700: oklch(52.3% 0.117 var(--brand-hue));
+
+  /* Encre / texte — rampe claire */
+  --gray-50: oklch(96.7% 0.004 255);
+  --gray-100: oklch(93.6% 0.006 256);
+  --gray-300: oklch(84.4% 0.009 258);
+  --gray-400: oklch(78% 0.013 254);
+  --gray-500: oklch(65.1% 0.012 257);
+  --gray-700: oklch(54.4% 0.012 262);
+  --ink-invert: oklch(20% 0.008 250); /* texte sombre sur surface claire */
+
+  /* Surfaces — rampe sombre (quasi-noirs) */
+  --gray-840: oklch(23.7% 0.015 257);
+  --gray-880: oklch(21.4% 0.015 249);
+  --gray-920: oklch(18.8% 0.013 245);
+  --gray-940: oklch(17.1% 0.011 248);
+  --gray-960: oklch(13.6% 0.005 262);
+
+  /* Danger — 1 teinte pilote tout le rouge d'erreur */
+  --danger-hue: 29;
+  --danger-500: oklch(70.6% 0.187 var(--danger-hue));
+  --danger-edge: oklch(63.3% 0.165 var(--danger-hue));
+  --danger-glow-base: oklch(56.8% 0.198 var(--danger-hue));
+  --danger-drop-base: oklch(67.4% 0.214 var(--danger-hue));
+
+  /* Ambiance — bases d'atmosphère (variantes dérivées par color-mix) */
+  --glow-cyan: oklch(37.7% 0.055 221);
+  --glow-red: oklch(34.3% 0.115 26);
+  --wash-cyan: oklch(42.4% 0.06 226);
+  --teal-deep: oklch(27% 0.035 237); /* washes teals sombres (cartes viz/bars) */
+
+  /* Palette décorative — couleurs uniques assumées (pastilles + logo) */
+  --dot-violet: oklch(59.9% 0.23 286);
+  --dot-pink: oklch(75.1% 0.174 353);
+  --dot-gold: oklch(88.5% 0.132 87);
+  --dot-teal: oklch(79.6% 0.123 181);
+  --dot-coral: oklch(75.3% 0.155 42);
+  --pink-soft: oklch(82.9% 0.072 29); /* logo-pink */
+}
+
+/* ═══════════════════ COUCHE 2 — SÉMANTIQUE / MAPPING ════════════════════ */
+/* Chaque token = un alias d'1 ligne vers une primitive. Aucune couleur      */
+/* « magique » ici : pour changer la palette, on édite les primitives.       */
+@theme inline {
+  /* Texte & bordures */
+  --color-bg: var(--gray-960);
+  --color-ink: var(--gray-50);
+  --color-ink-soft: var(--gray-300);
+  --color-muted: var(--gray-500);
+  --color-muted-2: var(--gray-700);
+  --color-line: color-mix(in oklch, white 9%, transparent);
+  --color-line-2: color-mix(in oklch, white 6%, transparent);
+  --color-accent: var(--brand-500);
+  --color-accent-hi: var(--brand-300);
+
+  /* Surfaces (rampe sombre) — réutilisées ; les mono-usage (bg-overlay,      */
+  /* bg-scrolled, footer, drops/journal/deco/stack, toast, deco-glass) sont    */
+  /* inlinés au point d'appel.                                                 */
+  --color-bg-hero: var(--gray-960);
+  --color-surface-bento: var(--gray-940);
+  --color-surface-deep: var(--gray-960);
+  --color-surface-tile-start: var(--gray-880);
+  --color-surface-tile-end: var(--gray-940);
+  --color-avatar-bg: var(--gray-840);
+
+  /* Texte spécialisé → rampe d'encre */
+  --color-title-start: var(--gray-50);
+  --color-title-mid: var(--gray-100);
+  --color-title-end: var(--gray-400);
+  --color-brand-muted: var(--gray-400);
+  --color-tile-icon: var(--gray-300);
+  --color-plan-icon: var(--gray-500);
+  --color-plan-feature: var(--gray-50);
+  --color-plan-action: var(--ink-invert);
+  --color-plan-action-hover: var(--gray-50);
+  --color-badge-foreground: var(--gray-100);
+  --color-google-wordmark: var(--gray-100);
+  --color-social-bg: var(--gray-50);
+  --color-social-foreground: var(--ink-invert);
+
+  /* Logo & pastilles décoratives : mono-usage → primitives (--brand-*,       */
+  /* --pink-soft, --dot-*) référencées directement dans SvgSymbols/SupoRuntime. */
+
+  /* Boutons CTA — nuances de la rampe brand (suivent --brand-hue) */
+  --color-primary-button-start: var(--brand-300);
+  --color-primary-button-mid: var(--brand-500);
+  --color-primary-button-end: var(--brand-600);
+  --color-pro-button-start: var(--brand-300);
+  --color-pro-button-mid: var(--brand-500);
+  --color-pro-button-end: var(--brand-600);
+  --color-pro-button-hover-start: var(--brand-200);
+  --color-pro-button-hover-mid: var(--brand-400);
+  --color-pro-button-hover-end: var(--brand-600);
+  --color-primary-button-border: color-mix(in oklch, var(--brand-300) 50%, transparent);
+  --color-pro-button-border: color-mix(in oklch, var(--brand-200) 55%, transparent);
+
+  /* Carte Pro & glowbar — nuances de bleu pilotées par --brand-hue */
+  --color-pro-border: color-mix(in oklch, var(--brand-200) 50%, transparent);
+  --color-pro-card-start: oklch(46.6% 0.091 var(--brand-hue));
+  --color-pro-card-mid: oklch(34.7% 0.06 var(--brand-hue));
+  --color-pro-card-deep: oklch(24.2% 0.041 var(--brand-hue));
+  --color-pro-card-end: var(--gray-940);
+  --color-pro-card-glow: oklch(82.4% 0.091 var(--brand-hue) / 0.62);
+  --color-glowbar-start: oklch(62.5% 0.13 var(--brand-hue));
+  --color-glowbar-mid: oklch(46.9% 0.099 var(--brand-hue));
+  --color-glowbar-end: oklch(30.8% 0.055 var(--brand-hue));
+  --color-glowbar-border: color-mix(in oklch, var(--brand-200) 55%, transparent);
+
+  /* Danger — dérivé de --danger-hue */
+  --color-danger-surface-start: oklch(21% 0.04 var(--danger-hue));
+  --color-danger-surface-end: oklch(16% 0.022 var(--danger-hue));
+  --color-danger-accent: var(--danger-500);
+  --color-danger-border: color-mix(in oklch, var(--danger-edge) 40%, transparent);
+  --color-danger-line: color-mix(in oklch, var(--danger-edge) 35%, transparent);
+  --color-danger-glow: color-mix(in oklch, var(--danger-glow-base) 55%, transparent);
+  --color-danger-drop: color-mix(in oklch, var(--danger-drop-base) 90%, transparent);
+
+  /* Glows de section : mono-usage, inlinés au point d'appel via            */
+  /* color-mix(... var(--glow-cyan|--glow-red) X%, transparent). L'opacité   */
+  /* (le seul paramètre qui variait par section) est désormais visible dans  */
+  /* la classe Tailwind du composant concerné.                               */
+
+  /* Washes / stripes / sheens : les mono-usage sont inlinés au point d'appel */
+  /* (classe du composant) ou dans la @utility qui les consomme. Ne restent   */
+  /* ici que ceux réellement réutilisés à plusieurs endroits.                 */
+  --color-bar-border: color-mix(in oklch, var(--brand-300) 10%, transparent);
+  --color-stripe-final: color-mix(in oklch, white 3%, transparent);
+
+  /* Fonts — source unique (chargées via next/font dans layout.jsx) */
+  --font-display: var(--font-newsreader), Georgia, serif;
+  --font-body: var(--font-poppins), system-ui, sans-serif;
+  --font-code: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono",
+    monospace;
+}
+
+/* ═════════════════ COUCHE 3 — ÉCHELLE / BREAKPOINTS / ANIM ══════════════ */
+@theme {
+  --breakpoint-xs: 22.5rem;
+  --breakpoint-mobile: 35rem;
+  --breakpoint-tablet: 53.75rem;
+
+  --text-xs--line-height: 1.45;
+  --text-sm--line-height: 1.45;
+  --text-base--line-height: 1.45;
+  --text-lg--line-height: 1.45;
+  --text-3xl--line-height: 1.45;
+
+  /* Échelle de titres (taille seule ; le line-height reste par classe) */
+  --text-hero: clamp(44px, 7.2vw, 104px);
+  --text-display: clamp(44px, 6.6vw, 92px);
+  --text-h2: clamp(30px, 3.4vw, 46px);
+  --text-card-title: 23px;
+  --text-feature-title: 22px;
+  --text-body-rx: 13.5px;
+
+  /* Rayons */
+  --radius-tile: 13px;
+  --radius-card: 20px;
+  --radius-card-lg: 26px;
+
+  /* Tracking (noms custom → pas de collision avec les défauts Tailwind) */
+  --tracking-display: -0.02em;
+  --tracking-heading: -0.01em;
+  --tracking-label: 0.14em;
+  --tracking-caps: 0.18em;
+
+  --animate-scroll-l: scrollL 46s linear infinite;
+  --animate-scroll-r: scrollR 46s linear infinite;
+
+  @keyframes scrollL {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  @keyframes scrollR {
+    from {
+      transform: translateX(-50%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+}
+
+/* ═══════════════ COUCHE COMPOSANT — ombres dérivées de l'accent ═════════ */
+/* color-mix(... var(--brand-500) X%, transparent) ≡ l'ancien rgba(accent,X). */
+@utility shadow-hairline {
+  box-shadow: inset 0 1px 0 color-mix(in oklch, white 5%, transparent);
+}
+@utility shadow-btn {
+  box-shadow:
+    0 8px 26px -8px color-mix(in oklch, var(--brand-500) 70%, transparent),
+    inset 0 1px 0 color-mix(in oklch, white 50%, transparent);
+}
+@utility shadow-btn-hover {
+  box-shadow:
+    0 12px 34px -8px color-mix(in oklch, var(--brand-500) 85%, transparent),
+    inset 0 1px 0 color-mix(in oklch, white 60%, transparent);
+}
+@utility shadow-pro-btn {
+  box-shadow:
+    0 10px 30px -8px color-mix(in oklch, var(--brand-500) 80%, transparent),
+    inset 0 1px 0 color-mix(in oklch, white 50%, transparent);
+}
+@utility shadow-pro-btn-hover {
+  box-shadow:
+    0 14px 38px -8px color-mix(in oklch, var(--brand-500) 90%, transparent),
+    inset 0 1px 0 color-mix(in oklch, white 60%, transparent);
+}
+@utility shadow-pro-card {
+  box-shadow:
+    inset 0 1px 0 color-mix(in oklch, white 30%, transparent),
+    0 0 80px -18px color-mix(in oklch, var(--brand-500) 70%, transparent);
+}
+@utility shadow-glow-accent {
+  box-shadow:
+    0 0 40px 4px color-mix(in oklch, var(--brand-500) 55%, transparent),
+    inset 0 1px 0 color-mix(in oklch, white 40%, transparent);
+}
+
+/* ═══════════════ COUCHE COMPOSANT — gradients réutilisés ════════════════ */
+@utility bg-title-gradient {
+  background-image: linear-gradient(
+    176deg,
+    var(--color-title-start) 0%,
+    var(--color-title-mid) 42%,
+    var(--color-title-end) 100%
+  );
+}
+@utility bg-primary-gradient {
+  background-image: linear-gradient(
+    180deg,
+    var(--color-primary-button-start) 0%,
+    var(--color-primary-button-mid) 42%,
+    var(--color-primary-button-end) 100%
+  );
+}
+@utility bg-cta {
+  background-image: radial-gradient(
+    120% 160% at 70% 20%,
+    color-mix(in oklch, var(--wash-cyan) 35%, transparent),
+    color-mix(in oklch, var(--gray-960) 60%, transparent)
+  );
+}
+@utility bg-bar {
+  background-image: linear-gradient(
+    180deg,
+    color-mix(in oklch, var(--wash-cyan) 50%, transparent),
+    color-mix(in oklch, var(--teal-deep) 12%, transparent)
+  );
+}
+@utility bg-bento-card {
+  background-image:
+    radial-gradient(
+      130% 100% at 50% 135%,
+      color-mix(in oklch, var(--wash-cyan) 16%, transparent),
+      transparent 58%
+    ),
+    linear-gradient(
+      160deg,
+      color-mix(in oklch, white 3.5%, transparent),
+      transparent 55%
+    );
+}
+@utility bg-price-card {
+  background-image:
+    radial-gradient(
+      120% 70% at 50% 130%,
+      color-mix(in oklch, var(--wash-cyan) 14%, transparent),
+      transparent 60%
+    ),
+    linear-gradient(170deg, var(--color-stripe-final), transparent 55%);
+}
+@utility bg-pro-card {
+  background-image:
+    radial-gradient(
+      110% 56% at 26% -10%,
+      var(--color-pro-card-glow),
+      transparent 56%
+    ),
+    linear-gradient(
+      180deg,
+      var(--color-pro-card-start) 0%,
+      var(--color-pro-card-mid) 28%,
+      var(--color-pro-card-deep) 60%,
+      var(--color-pro-card-end) 100%
+    );
+}
+@utility bg-pro-gradient {
+  background-image: linear-gradient(
+    180deg,
+    var(--color-pro-button-start) 0%,
+    var(--color-pro-button-mid) 46%,
+    var(--color-pro-button-end) 100%
+  );
+}
+@utility bg-pro-gradient-hover {
+  background-image: linear-gradient(
+    180deg,
+    var(--color-pro-button-hover-start) 0%,
+    var(--color-pro-button-hover-mid) 46%,
+    var(--color-pro-button-hover-end) 100%
+  );
+}
+
+@layer components {
+  .btn,
+  .menu,
+  .contact,
+  .mo-close,
+  .mo-contact a,
+  .mo-social a,
+  .f-nav a,
+  .f-social a {
+    transition-duration: 280ms;
+    transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .btn {
+    transition-property: color, background-color, border-color, box-shadow,
+      filter;
+    will-change: filter;
+  }
+
+  .btn:hover {
+    filter: brightness(1.05);
+    transform: none;
+    translate: 0 0;
+  }
+
+  .menu,
+  .contact,
+  .mo-close,
+  .mo-contact a,
+  .mo-social a,
+  .f-nav a {
+    transition-property: color, opacity;
+  }
+
+  .menu-link {
+    transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .menu-link .idx,
+  .menu-link .lbl {
+    transition-property: color, transform, opacity;
+    transition-duration: 360ms;
+    transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .menu-link:hover .idx {
+    transform: translateX(4px);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .btn,
+    .menu,
+    .contact,
+    .mo-close,
+    .mo-contact a,
+    .mo-social a,
+    .f-nav a,
+    .f-social a,
+    .menu-link,
+    .menu-link .idx,
+    .menu-link .lbl {
+      transition-duration: 1ms;
+    }
+  }
+}
+
+@layer utilities {
+  .btn:hover,
+  .btn:active,
+  .f-social a:hover,
+  .f-social a:active,
+  button:hover,
+  button:active {
+    transform: none;
+    translate: 0 0;
+  }
+}
