@@ -3,6 +3,14 @@
 /* Ne pas scanner la doc (specs/plans) pour les classes Tailwind. */
 @source not "./docs";
 
+/* Police de base en CSS pur (hors @theme, que le navigateur ignore) : garantit  */
+/* une sans-serif dans le prototype statique index.html, qui lie ce fichier sans  */
+/* compilation Tailwind. En contexte Next.js, --font-body est défini et prime ;   */
+/* sinon on retombe sur "Poppins" (chargé par <link> Google) puis system-ui.      */
+body {
+  font-family: var(--font-body, "Poppins"), system-ui, sans-serif;
+}
+
 /* ════════════════════════ COUCHE 1 — PRIMITIVES ════════════════════════ */
 /* Valeurs brutes. Convertibles en OKLCH sans toucher au reste (Task 4).    */
 :root {
@@ -143,9 +151,13 @@
   --color-bar-border: color-mix(in oklch, var(--brand-300) 10%, transparent);
   --color-stripe-final: color-mix(in oklch, white 3%, transparent);
 
-  /* Fonts — source unique (chargées via next/font dans layout.jsx) */
-  --font-display: var(--font-newsreader), Georgia, serif;
-  --font-body: var(--font-poppins), system-ui, sans-serif;
+  /* Fonts — source unique (chargées via next/font dans layout.jsx).         */
+  /* Fallback littéral "Poppins"/"Newsreader" : si --font-poppins n'est pas   */
+  /* injecté (prototype statique sans next/font), on retombe sur la police    */
+  /* chargée par nom via le <link> Google de index.html — jamais sur le       */
+  /* défaut serif (Times New Roman).                                          */
+  --font-display: var(--font-newsreader, "Newsreader"), Georgia, serif;
+  --font-body: var(--font-poppins, "Poppins"), system-ui, sans-serif;
   --font-code: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono",
     monospace;
 }
